@@ -2,6 +2,11 @@
 /* ----------- Color Variables --------- */
 /* Looking for the color variables? They have been moved to the inline-styles file in the _includes folder, and pull variables from the site-settings folder in the _data folder.  */
 
+
+/* max-height: 72vh;
+width: 100%;
+object-fit: cover; */
+
 /* Tailwind */
 @tailwind base;
 @tailwind components;
@@ -16,7 +21,7 @@ html {
 body{
   background-color: white;
   color: black;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body > section, 
@@ -25,6 +30,11 @@ body header {
   position: relative;
   padding: 6% 5%;
   padding-top: 2%;
+}
+
+body header {
+  background-color: #AF7149;
+  color: white;
 }
 
 .example-block {
@@ -67,9 +77,34 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+h2,
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.featured-text {
+  font-family: 'League Script', cursive;
 }
 
 .vertical-text {
   writing-mode: vertical-rl;
   text-orientation: mixed;
+}
+
+.featured-bg {
+  background-color: #AF7149;
+}
+
+.featured-bg2 {
+  background-color: #E8CEB7;
+}
+
+.featured-text-colour {
+  color: #AF7149;
 }

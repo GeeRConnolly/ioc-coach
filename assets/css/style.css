@@ -2,6 +2,11 @@
 /* ----------- Color Variables --------- */
 /* Looking for the color variables? They have been moved to the inline-styles file in the _includes folder, and pull variables from the site-settings folder in the _data folder.  */
 
+
+/* max-height: 72vh;
+width: 100%;
+object-fit: cover; */
+
 /* Tailwind */
 /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */
 /*
@@ -461,6 +466,30 @@ video {
 .grid {
   display: grid;
 }
+.max-h-0\.5 {
+  max-height: 0.125rem;
+}
+.max-h-0 {
+  max-height: 0px;
+}
+.max-h-1 {
+  max-height: 0.25rem;
+}
+.max-h-3 {
+  max-height: 0.75rem;
+}
+.max-h-20 {
+  max-height: 5rem;
+}
+.max-h-60 {
+  max-height: 15rem;
+}
+.max-h-80 {
+  max-height: 20rem;
+}
+.max-h-96 {
+  max-height: 24rem;
+}
 .w-full {
   width: 100%;
 }
@@ -513,15 +542,14 @@ video {
 .border {
   border-width: 1px;
 }
-.border-y-2 {
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-}
 .border-b-2 {
   border-bottom-width: 2px;
 }
 .border-t-2 {
   border-top-width: 2px;
+}
+.border-t-4 {
+  border-top-width: 4px;
 }
 .bg-inherit {
   background-color: inherit;
@@ -535,6 +563,10 @@ video {
 }
 .bg-center {
   background-position: center;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-3 {
   padding: 0.75rem;
@@ -551,6 +583,10 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .py-14 {
   padding-top: 3.5rem;
@@ -617,6 +653,14 @@ video {
   font-size: 1.5rem;
   line-height: 1.2;
 }
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 1;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -635,13 +679,13 @@ video {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 /* Custom CSS */
@@ -653,7 +697,7 @@ html {
 body{
   background-color: white;
   color: black;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body > section, 
@@ -662,6 +706,11 @@ body header {
   position: relative;
   padding: 6% 5%;
   padding-top: 2%;
+}
+
+body header {
+  background-color: #AF7149;
+  color: white;
 }
 
 .example-block {
@@ -690,11 +739,36 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+h2,
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.featured-text {
+  font-family: 'League Script', cursive;
 }
 
 .vertical-text {
   writing-mode: vertical-rl;
   text-orientation: mixed;
+}
+
+.featured-bg {
+  background-color: #AF7149;
+}
+
+.featured-bg2 {
+  background-color: #E8CEB7;
+}
+
+.featured-text-colour {
+  color: #AF7149;
 }
 
 .hover\:bg-black:hover {
@@ -705,17 +779,6 @@ h1 {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-black {
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  }
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 640px) {

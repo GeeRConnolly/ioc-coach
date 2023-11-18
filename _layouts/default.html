@@ -9,13 +9,19 @@
 
     <link href="/assets/css/style.css" rel="stylesheet">
 
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
 </head>
-<body class="dark:bg-black dark:text-white">
+<body>
 
     <!-- This is the navigation bar -->
-    <section>
+    <section class=featured-bg>
     <header>
-        <div class="flex justify-between items-center uppercase border-b-2 pb-6">
+        <div class="flex justify-between items-center uppercase border-b-2 pb-6 text-white font-bold">
             <h3> Name of company </h3>
 
             <nav>
@@ -27,19 +33,23 @@
         </div>
         <!-- This is the heading banner section -->
 
-        <div class="py-10">
-            <h1 class="leading-12"> This is a <br> fun heading </h1>
+        <div class="py-10 text-center">
+            <p class="featured-text py-4 text-4xl"> Lorem ipsum dolor sit amet consectetur </p>
+            <h1 class="leading-12"> Coaching </h1>
         </div>
 
         <div> 
-            <img src="/images/moody-website-assets/moody-1.jpg" class="mb-24">
+            <img src="/images/coaching4.jpg" class="mb-24 max-h-96 w-full object-cover">
         </div>
 
-        <div class="grid md:grid-cols-6 gap-4">
-            <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> 900 </span> </h3>
-            <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> Y2K </span> </h3>
-            <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> 420K </span> </h3>
-            <p class="col-span-3 leading-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate hic quo fugiat itaque recusandae temporibus voluptatem. Cupiditate hic quo fugiat itaque recusandae temporibus voluptatem. </p>
+        <div class="text-center">
+            <p class="col-span-3 leading-2 featured-text text-2xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate hic quo fugiat itaque recusandae temporibus voluptatem. Cupiditate hic quo fugiat itaque recusandae temporibus voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate hic quo fugiat itaque recusandae temporibus voluptatem. Cupiditate hic quo fugiat itaque recusandae temporibus voluptatem.Lorem ipsum dolor sit amet. </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4 py-10 text-center">
+            <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> Fact here </span> </h3>
+            <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> Fact here </span> </h3>
+            <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> Fact here </span> </h3>
         </div>
     </section>
 
