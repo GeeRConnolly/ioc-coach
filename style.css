@@ -28,7 +28,7 @@ body > section,
 body footer,
 body header {
   position: relative;
-  padding: 6% 5%;
+  padding: 5% 5%;
   padding-top: 2%;
 }
 
@@ -50,20 +50,6 @@ body header {
 
 img {
   max-width:100%;
-}
-
-
-
-@layer components {
-.button {
-  @apply bg-black text-white border;
-  text-transform: uppercase;
-  } 
-
-.button:hover {
-  transition: all 0.2s;
-  @apply bg-black text-white border dark:bg-white dark:text-black;
-  }
 }
 
 /* Typography Styles */
@@ -105,6 +91,6 @@ h3 {
   background-color: #E8CEB7;
 }
 
-.featured-text-colour {
+.featured-text-color {
   color: #AF7149;
 }
