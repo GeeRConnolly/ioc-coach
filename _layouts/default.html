@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document</title>
+
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+</head>
+<body class="dark:bg-black dark:text-white">
+
+    <!-- This is the navigation bar -->
+    <section>
+    <header>
+        <div class="flex justify-between items-center uppercase border-b-2 pb-6">
+            <h3> Name of company </h3>
+
+            <nav>
+                <a href="#" class="m-3 p-3 inline-block"> Nav 1 </a>
+                <a href="#" class="m-3 p-3 inline-block"> Nav 2 </a>
+                <a href="#" class="m-3 p-3 inline-block"> Nav 3 </a>
+                <a href="#" class="m-3 p-3 inline-block"> Nav 4 </a>
+            </nav>
+        </div>
+        <!-- This is the heading banner section -->
+
+        <div class="py-10">
+            <h1 class="leading-12"> This is a <br> fun heading </h1>
+        </div>
+
+        <div> 
+            <img src="/images/moody-website-assets/moody-1.jpg" class="mb-24">
+        </div>
+
+        <div class="grid md:grid-cols-6 gap-4">
+            <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> 900 </span> </h3>
+            <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> Y2K </span> </h3>
+            <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> 420K </span> </h3>
+            <p class="col-span-3 leading-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate hic quo fugiat itaque recusandae temporibus voluptatem. Cupiditate hic quo fugiat itaque recusandae temporibus voluptatem. </p>
+        </div>
+    </section>
+
+    </header>
+
+    {{content}}
+
+    <!-- This is the footer section -->
+    
+    <footer>
+
+        <div class="grid md:grid-cols-2 md:flex md:justify-between border-t-2 py-14 gap-16 md:gap-12">
+
+        <div>
+            <h4 class="uppercase pb-4"> Small heading </h4>
+            <nav class="uppercase leading-6">
+                <a href="#" class="block"> Lorem Ipsum </a>
+                <a href="#" class="block"> Lorem Ipsum </a>
+                <a href="#" class="block"> Lorem Ipsum </a>
+                <a href="#" class="block"> Lorem Ipsum </a>
+            </nav>
+        </div>
+    
+        <div>
+            <h4 class="uppercase pb-4"> Small heading </h4>
+            <nav class="uppercase leading-6">
+                <a href="#" class="block"> Lorem Ipsum </a>
+                <a href="#" class="block"> Lorem Ipsum </a>
+                <a href="#" class="block"> Lorem Ipsum </a>
+                <a href="#" class="block"> Lorem Ipsum </a>
+            </nav>
+        </div>
+        <div></div>
+        <div class="shrink-0">   
+            <form> 
+                <label for="Subscribe" class="text-2xl mb-4 block uppercase"> Subscribe to our newsletter </label>
+                <input type="text" id="subscribe" name="SUBSCRIBE" class="px-6 py-1 w-full mb-4 bg-inherit border"> 
+
+                <div class="text-right">
+                <input class="px-8 py-1 uppercase bg-inherit ml-auto tracking-widest mb-4" type="submit" value="SUBSCRIBE">
+                </div>
+            </form>
+        </div>
+        </div> 
+ </footer>
+
+</body>
+</html>

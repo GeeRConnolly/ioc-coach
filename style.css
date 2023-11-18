@@ -1,0 +1,75 @@
+
+/* ----------- Color Variables --------- */
+/* Looking for the color variables? They have been moved to the inline-styles file in the _includes folder, and pull variables from the site-settings folder in the _data folder.  */
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+
+html {
+  scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+}
+
+body{
+  background-color: white;
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body > section, 
+body footer,
+body header {
+  position: relative;
+  padding: 6% 5%;
+  padding-top: 2%;
+}
+
+.example-block {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+
+
+@layer components {
+.button {
+  @apply bg-black text-white border;
+  text-transform: uppercase;
+  } 
+
+.button:hover {
+  transition: all 0.2s;
+  @apply bg-black text-white border dark:bg-white dark:text-black;
+  }
+}
+
+/* Typography Styles */
+
+a {
+  text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
